@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>আমাদের নাসিরনগর</title>
+  <link rel="icon" href="assets/logo.jpg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="brand">
+    <img src="assets/logo.jpg" alt="Logo">
+    <div>
+      <h1>আমাদের নাসিরনগর</h1>
+      <small>IT Expert Monir • VFX Monir</small>
+    </div>
+  </div>
+
+  <nav class="nav-links">
+    <a href="#">হোম</a>
+    <a href="#">সার্চ</a>
+    <a href="#">পোস্ট</a>
+    <a href="#">নোটিফিকেশন</a>
+  </nav>
+
+  <div class="nav-right">
+    <button id="googleLogin" class="btn-login">Google Login</button>
+    <button id="logoutBtn" class="btn-login hidden">Logout</button>
+    <img id="navAvatar" class="nav-avatar hidden" src="assets/default-avatar.png" alt="Avatar">
+  </div>
+</header>
+
+<div class="layout">
+
+  <!-- Left Sidebar -->
+
+  <aside class="card sidebar">
+    <div class="profile-card">
+      <img id="profilePhoto" src="assets/default-avatar.png" alt="Profile">
+      <h3 id="profileName">Guest User</h3>
+      <p id="profileEmail">Login করুন</p>
+      <button class="btn-primary">প্রোফাইল দেখুন</button>
+    </div>
+
+```
+<div class="menu">
+  <a href="#">হোম</a>
+  <a href="#">আমার প্রোফাইল</a>
+  <a href="#">সংরক্ষিত পোস্ট</a>
+  <a href="#">আমার পোস্ট</a>
+  <a href="#">সেটিংস</a>
+</div>
+```
+
+  </aside>
+
+  <!-- Center Feed -->
+
+  <main>
+
+```
+<section id="uploadBox" class="card hidden">
+  <div class="composer">
+    <div class="composer-top">
+      <img id="composerAvatar" src="assets/default-avatar.png" alt="Avatar">
+      <input id="postTitle" type="text" placeholder="কি ভাবছেন?">
+    </div>
+
+    <textarea id="postDescription" placeholder="বিস্তারিত লিখুন..."></textarea>
+
+    <div class="composer-actions">
+      <input id="postLocation" type="text" placeholder="লোকেশন">
+      <input id="postImage" type="file" accept="image/*">
+      <button id="uploadPostBtn" class="btn-primary">পোস্ট করুন</button>
+    </div>
+
+    <p id="uploadStatus"></p>
+  </div>
+</section>
+
+<section class="card">
+  <div class="section-title">
+    <h2>সবার পোস্ট</h2>
+    <input id="searchInput" type="text" placeholder="সার্চ করুন...">
+  </div>
+
+  <div id="feed" class="feed"></div>
+</section>
+```
+
+  </main>
+
+  <!-- Right Sidebar -->
+
+  <aside class="card sidebar-right">
+    <h3>স্টোরি</h3>
+    <div class="stories">
+      <div class="story"><img src="assets/default-avatar.png"><span>আপনি</span></div>
+      <div class="story"><img src="assets/default-avatar.png"><span>Rahim</span></div>
+      <div class="story"><img src="assets/default-avatar.png"><span>Karim</span></div>
+      <div class="story"><img src="assets/default-avatar.png"><span>Nusrat</span></div>
+    </div>
+
+```
+<h3>জনপ্রিয় পোস্ট</h3>
+<div class="trending">
+  <div class="trend-item">
+    <img src="assets/logo.jpg">
+    <div>
+      <strong>নাসিরনগরের প্রাকৃতিক সৌন্দর্য</strong>
+      <small>256 প্রতিক্রিয়া</small>
+    </div>
+  </div>
+</div>
+```
+
+  </aside>
+
+</div>
+
+<footer>
+  © 2026 আমাদের নাসিরনগর • IT Expert Monir • VFX Monir
+</footer>
+
+<script type="module" src="js/firebase-config.js"></script>
+
+<script type="module" src="js/auth.js"></script>
+
+<script type="module" src="js/upload.js"></script>
+
+<script type="module" src="js/feed.js"></script>
+
+</body>
+</html>
